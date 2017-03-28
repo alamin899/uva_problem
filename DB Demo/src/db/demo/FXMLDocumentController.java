@@ -35,9 +35,7 @@ public class FXMLDocumentController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         try {
             Connection connection = DriverManager
-                    .getConnection("jdbc:mysql://172.17.0.119/spring2017db",
-                            "javauser",
-                            "java");
+                    .getConnection("jdbc:mysql://192.168.1.6/information","root","140186");
             Statement statement = connection.createStatement();
             String query = "SELECT * FROM student";
             
